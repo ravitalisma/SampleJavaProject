@@ -39,9 +39,7 @@ public class HelloTest {
 	}
 	@Test
 	public void test1(){
-		Hello h = new Hello();
-		String s = h.displayHelloMessage();
-		Assert.assertEquals(s,"hi new message");
+		Assert.assertEquals(App.displayHelloMessage(),"hi new message");
 	}
 
 	@AfterTest
