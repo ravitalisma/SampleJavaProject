@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import static org.junit.Assert.*;
+import junit.framework.Assert;
 import org.junit.Test;
 
 public class HelloTest {
