@@ -1,6 +1,6 @@
 package org.ravi.helloworld;
 
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import static org.testng.Assert.assertTrue;
 import java.util.concurrent.TimeUnit;
@@ -12,12 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import java.lang.String;
-
-import org.junit.Test;
 
 public class HelloTest {
 
+	private Hello hello;
 	WebDriver driver;
 	WebElement text;
 	@BeforeTest
@@ -37,11 +35,6 @@ public class HelloTest {
 		Assert.assertEquals(driver.getTitle(), "");
 		System.out.println("Test Passed");
 
-	}
-	@Test
-	public void test1(){
-		//Hello App = new Hello();
-		Assert.assertEquals("hi new message","hi new message");
 	}
 
 	@AfterTest
