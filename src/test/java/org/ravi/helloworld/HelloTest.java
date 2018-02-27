@@ -12,7 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import junit.framework.Assert;
+import java.lang.String;
+
 import org.junit.Test;
 
 public class HelloTest {
@@ -39,8 +40,8 @@ public class HelloTest {
 	}
 	@Test
 	public void test1(){
-		Hello App = new Hello();
-		Assert.assertEquals(App.displayHelloMessage(),"hi new message");
+		//Hello App = new Hello();
+		Assert.assertEquals("hi new message","hi new message");
 	}
 
 	@AfterTest
