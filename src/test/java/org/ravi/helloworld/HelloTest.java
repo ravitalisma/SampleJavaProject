@@ -12,6 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class HelloTest {
 
@@ -35,6 +37,7 @@ public class HelloTest {
 		System.out.println("Test Passed");
 
 	}
+	@Test
 	public void test1(){
 		Hello h = new Hello();
 		String s = h.displayHelloMessage();
