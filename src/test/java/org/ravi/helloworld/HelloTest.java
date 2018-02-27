@@ -35,6 +35,11 @@ public class HelloTest {
 		System.out.println("Test Passed");
 
 	}
+	public void test1(){
+		Hello h = new Hello();
+		String s = h.displayHelloMessage();
+		Assert.assertEquals(s,"hi new message");
+	}
 
 	@AfterTest
 	public void afterTest() {
