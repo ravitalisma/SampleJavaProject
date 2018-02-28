@@ -15,7 +15,6 @@ import org.testng.annotations.AfterTest;
 
 public class HelloTest {
 
-	private Hello hello;
 	WebDriver driver;
 	WebElement text;
 	@BeforeTest
@@ -24,7 +23,7 @@ public class HelloTest {
 		driver = new FirefoxDriver();*/
 		System.setProperty("webdriver.chrome.driver","resources\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://localhost:9002/HelloWorld.war/");
+		driver.get("http://localhost:9002/HelloWorld/");
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 	}
 
