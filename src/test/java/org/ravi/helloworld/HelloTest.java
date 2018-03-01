@@ -17,6 +17,7 @@ public class HelloTest {
 
 	WebDriver driver;
 	WebElement text;
+	
 	@BeforeTest
 	public void beforeTest() {
 		/*	System.setProperty("webdriver.gecko.driver", "resources\\geckodriver32.exe");
